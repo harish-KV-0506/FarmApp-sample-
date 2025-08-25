@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmFresh - Daily Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0ab889, #0c89e9, #7205f8);
+            color: white;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+        }
+        .navbar input {
+            padding: 8px;
+            width: 40%;
+            font-size: 1em;
+        }
+        .navbar div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Fresh farm</h2>
+        <input type="text" placeholder="Search for products...">
+        <div>
+            <span>📍 Your Location</span>
+            <span>👤 Profile</span>
+        </div>
+    </div>
+    
+    <section class="products-container">
+        <div class="product">
+            <img src="images/vegetables.jpg" alt="Vegetables">
+            <h3>Fresh Vegetables</h3>
+        </div>
+        <div class="product">
+            <img src="images/fruits.jpg" alt="Fruits">
+            <h3>Organic Fruits</h3>
+        </div>
+        <div class="product">
+            <img src="images/oil.jpg" alt="Cooking Oils">
+            <h3>Pure Cooking Oils</h3>
+        </div>
+        <div class="product">
+            <img src="images/dairy.jpg" alt="Dairy Products">
+            <h3>Fresh Dairy</h3>
+        </div>
+    </section>
+    
+    <footer>
+        <p><a href="home.html">Home</a> | <a href="#about">About Us</a> | <a href="#services">Services</a> | <a href="#contact">Contact</a></p>
+        <p>&copy; 2025 FarmFresh. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
